@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Искусство Барокко и Рококо</title>
 </head>
+
 <body>
-<header class="header">
-    <a><img class="header__logo" src="images/images.jpg" alt="logo"></a>
-    <nav class="header__menu">
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu__link" href="#">О нас</a></li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Галерея</a></li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">Каталог</a></li>
-            <li class="menu__item">
-                <a class="menu__link" href="#">События</a></li>
-        </ul>
-        <button class="header__button">Войти</button>
-    </nav>
-</header>
-<main class="main">
-    <section class="about">
-        <p class="about__text">Данный сайт посвящен искусству Барокко и Рококо</p>
-            <ol class="about__list">
+    <header class="header container">
+        <div class="header__first-line">
+            <a><img class="header__logo" src="images/images.jpg" alt="logo"></a>
+            <h1 class="header__title">Искусство Барокко и Рококо</h1>
+            <div class="header__buttons">
+                <button class="header__button">Войти</button>
+                <button class="header__button">Регистрация</button>
+            </div>
+        </div>
+
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Галерея</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Каталог</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">События</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+    <main class="main container">
+        <section class="about">
+            <img class="adout__image" src="images/versalskiy-dvorets.jpg" alt="Баннер">
+            <p class="about__text">Данный сайт посвящен искусству Барокко и Рококо</p>
+            <ul class="about__list">
                 <li class="about__link"><a href="#">Барокко</a></li>
                 <li class="about__link"><a href="#">Рококо</a></li>
-            </ol>
-        <h1 class="about__title">Искусство Барокко и Рококо</h1>
-        <img class="adout__image" src="images/versalskiy-dvorets.jpg" alt="Баннер">
+            </ul>
+        </section>
 
-    </section>
-
-</main>
-<footer class="footer">
-    <section class="contact">
-        <h2 class="contact__title">Контакты</h2>
-        <p class="contact__phone">8800123123</p>
-    </section>
-    <section class="social">
-       <h2 class="social__title">Ссылка на соцсети</h2>
-       <ul>
-        <li class="social__link"><a href="#">Вконтакте</a></li>
-        <li class="social__link"><a href="#">Телеграм</a></li>
-    </ul>
-    </section>
-</footer>
+    </main>
+    <footer class="footer container">
+        <section class="contact">
+            <h2 class="contact__title">Контакты</h2>
+            <p class="contact__phone">8800123123</p>
+        </section>
+        <section class="social">
+            <h2 class="social__title">Ссылка на соцсети</h2>
+            <ul>
+                <li class="social__link"><a href="#">Вконтакте</a></li>
+                <li class="social__link"><a href="#">Телеграм</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
+
 </html>
