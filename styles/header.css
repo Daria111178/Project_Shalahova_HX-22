@@ -1,7 +1,8 @@
-.header__first-line{
+.header__first-line {
     display: flex;
     align-items: center;
 }
+
 .menu {
     margin: 0;
     padding: 0;
@@ -9,16 +10,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 1px;
+}
+
+.menu__item {
+    min-width: 180px;
 }
 
 .menu__link {
     display: block;
     padding: 10px;
-    margin: 5px;
     background-color: rgb(62, 120, 167);
     color: rgb(255, 255, 255);
     text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.menu__link:hover {
+    background-color: #9ebdeb;
 }
 
 .header__login {
@@ -52,4 +63,19 @@
 
 .header__title {
     margin: 0;
+
+    font-size: 40px;
+}
+
+.header__buttons {
+    margin-left: auto;
+}
+
+.header__button {
+    background-color: #ffd376;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
 }
