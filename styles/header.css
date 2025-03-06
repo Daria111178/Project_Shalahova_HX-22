@@ -79,3 +79,7 @@
     padding: 10px;
     cursor: pointer;
 }
+.header__button:hover {
+    background-color: #e7bc60;
+}
+
