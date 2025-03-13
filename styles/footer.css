@@ -1,3 +1,10 @@
-.contact {
-    
+.social_list {
+    list-style: none;
+
+}
+.social__link {
+    text-decoration: none;
+}
+.social__link:hover{
+    color: #9ebdeb;
 }

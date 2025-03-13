@@ -23,16 +23,16 @@
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item">
-                    <a class="menu__link" href="#">О нас</a>
+                    <a class="menu__link" href="about.html">О нас</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Галерея</a>
+                    <a class="menu__link" href="gallery.html">Галерея</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Каталог</a>
+                    <a class="menu__link" href="catalog.html">Каталог</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">События</a>
+                    <a class="menu__link" href="events.html">События</a>
                 </li>
             </ul>
 
@@ -45,25 +45,38 @@
             <img class="adout__image" src="images/versalskiy-dvorets.jpg" alt="Баннер">
             <p class="about__text" style="text-align: center;">Данный сайт посвящен искусству Барокко и Рококо</p>
             <div class="about__links">
-                <a class="about__link" href="#">Барокко</a>
-                <a class="about__link" href="#">Рококо</a>
+                <a class="about__link" href="baroque.html">Барокко</a>
+                <a class="about__link" href="rococo.html">Рококо</a>
             </div>
         </section>
 
     </main>
     <footer class="footer container">
         <section class="contact">
-            <h2 class="contact__title">Контакты</h2>
-            <p class="contact__phone">8800123123</p>
-        </section>
-        <section class="social">
             <h2 class="social__title">Ссылка на соцсети</h2>
             <ul class="social_list">
-                <li class="social__link"><a href="#">Вконтакте</a></li>
-                <li class="social__link"><a href="#">Телеграм</a></li>
+                <li class="social__item"><a class="social__link" href="#">Вконтакте</a></li>
+                <li class="social__item"><a class="social__link" href="#">Телеграм</a></li>
             </ul>
         </section>
     </footer>
+<section hidden>
+    <form action="/">
+        <h2>Вход в личный кабинет</h2>
+        <input type="tel" name="phone" placeholder="Номер телефона" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button>Войти</button>
+    </form>
+</section>
+<section hidden>
+    <form action="/">
+        <h2>Регистрация</h2>
+        <input type="nickname" name="nickname" placeholder="Имя пользователя" required>
+        <input type="tel" name="phone" placeholder="Номер телефона" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button>Регистрация</button>
+    </form>
+</section>
 </body>
 
 </html>
