@@ -25,3 +25,7 @@
 .about__link:hover {
     background-color: #9ebdeb;
 }
+.main-gallery{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
