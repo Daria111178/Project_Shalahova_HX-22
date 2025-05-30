@@ -68,23 +68,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const menuData = {
             // Каждая ссылка содержит link (адрес ссылки; если ссылка никуда не ведет, то можно оставить #) и title (текст ссылки).
             link1: {
-                link: '#',
+                UrlLink: 'about.html',
                 title: 'О нас',
             },
             link2: {
-                link: '#',
+                UrlLink: 'gallery.html',
                 title: 'Галерея',
             },
             link3: {
-                link: '#',
+                UrlLink: 'catalog.html',
                 title: 'Каталог',
             },
             link4: {
-                link: '#',
+                UrlLink: 'events.html',
                 title: 'События',
             },
             link5: {
-                link: '#',
+                UrlLink: 'index.html',
                 title: 'Главная',
             }
         }
@@ -175,5 +175,13 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
     }
-
+    const sliders = document.querySelector('.swiper');
+    if (sliders) {
+   const swiper1 = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    }
 });

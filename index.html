@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+
     <title>Искусство Барокко и Рококо</title>
 </head>
 
@@ -47,8 +49,10 @@
         <section class="about">
             <img class="adout__image" src="images/versalskiy-dvorets.jpg" alt="Баннер">
             <p class="about__text" style="text-align: center;">Данный сайт посвящен искусству Барокко и Рококо.
-                Здесь вы можете погрузиться в мир изысканной красоты и динамичных форм, которые определяли эти уникальные художественные эпохи. 
-                Вы узнаете об основных характеристиках стилей, их истоках, выдающихся художниках и мастерах а также о влиянии на архитектуру, живопись, скульптуру и декоративное искусство.</p>
+                Здесь вы можете погрузиться в мир изысканной красоты и динамичных форм, которые определяли эти
+                уникальные художественные эпохи.
+                Вы узнаете об основных характеристиках стилей, их истоках, выдающихся художниках и мастерах а также о
+                влиянии на архитектуру, живопись, скульптуру и декоративное искусство.</p>
             <div class="about__links">
                 <a class="about__link" href="baroque.html">Барокко</a>
                 <a class="about__link" href="rococo.html">Рококо</a>
@@ -78,22 +82,46 @@
         </div>
     </section>
 
-<section hidden>
-    <form action="/">
-        <h2>Регистрация</h2>
-        <input type="nickname" name="nickname" placeholder="Имя пользователя" required>
-        <input type="tel" name="phone" placeholder="Номер телефона" required>
-        <input type="password" name="password" placeholder="Пароль" required>
-        <button>Регистрация</button>
-    </form>
-</section>
-<section class="images">
-    <h2 class="images_title"> Изображения</h2>
-    <ul class="images_list">
-        <!--Здесь будет создаваться код с использованием JSON.-->
-    </ul>
-</section>
-</section>
-<script src="js/script.js"></script> 
+    <section hidden>
+        <form action="/">
+            <h2>Регистрация</h2>
+            <input type="nickname" name="nickname" placeholder="Имя пользователя" required>
+            <input type="tel" name="phone" placeholder="Номер телефона" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button>Регистрация</button>
+        </form>
+    </section>
+    <section class="images">
+        <h2 class="images_title"> Изображения</h2>
+        <ul class="images_list">
+            <!--Здесь будет создаваться код с использованием JSON.-->
+        </ul>
+    </section>
+    <section class="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper__image" src="images/7.jpg" alt="картинка" width="300">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__image" src="images/8.jpg" alt="картинка" width="300">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__image" src="images/9.jpg" alt="картинка" width="300">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__image" src="images/10.jpg" alt="картинка" width="300">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__image" src="images/11.jpg" alt="картинка" width="300">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
