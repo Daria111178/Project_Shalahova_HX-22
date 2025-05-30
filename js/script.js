@@ -58,3 +58,56 @@ const closeModalButton = document.querySelector(".application__close");
 closeModalButton.addEventListener("click", () => {
     modalApplication.setAttribute("hidden", true);
 });
+//Объявляем переменную headerMenu и сохраняем в нее header__menu
+const headerMenu = document.querySelector('.header__menu');
+// Если такой элемент существует
+if (headerMenu){
+//Объявляем переменную headerList и сохраняем в нее header__list, чтобы мы могли добавить новые элементы
+        const headerList = headerMenu.querySelector('.menu');
+
+//Создаем объект menuData, который содержит данные для трех ссылок меню.
+        const menuData = {
+// Каждая ссылка содержит link (адрес ссылки; если ссылка никуда не ведет, то можно оставить #) и title (текст ссылки).
+            link1: {
+                link: '#',
+                title: 'О нас',
+            },
+            link2: {
+                link: '#',
+                title: 'Галерея',
+            },
+            link3: {
+                link: '#',
+                title: 'Каталог',
+            },
+            link4: {
+                link: '#',
+                title: 'События',
+            },
+            link5: {
+                link: '#',
+                title: 'Главная',
+            }
+        }
+
+//Создаем функцию createLink, которая будет добавлять ссылку в меню. Внутри функции 2 переменные: UrlLink – адрес, а title — текст ссылки.
+        const createLink = (UrlLink, title) =>{
+// создаем переменную  link, которая будет содержать HTML-код ссылки и вставляем в него 2 переменные
+            const link = `
+            <li class="menu__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
+            `;
+            return link;
+        }
+
+// Создаем цикл for и проходим по всем элементам объекта menuData.
+        for (const linkItem in menuData) {
+//Получаем данные для ссылки и сохраняем в переменную link.
+            const link = menuData[linkItem];
+//Создаем переменную linkIndex и вызываем функцию createLink, куда передаем адрес и заголовок.
+            const linkIndex = createLink(link.UrlLink, link.title);
+// С помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка headerList.
+            headerList.insertAdjacentHTML('beforeend', linkIndex);
+
+        }
+}
+
