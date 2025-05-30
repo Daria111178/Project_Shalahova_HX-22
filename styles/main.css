@@ -29,3 +29,48 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
+.applications {
+    position: fixed; /* позицинорование фиксированное */
+    top: 0; /* Элемент будет находиться на верхней границе экрана*/
+    left: 0; /* Элемент будет находиться на левой границе экрана.*/
+    width: 100%;/* Ширина 100% от окна браузера */
+    height: 100%;/* Высота 100% от окна браузера */
+    background-color: rgba(58, 60, 65, 0.7); /*задаем фон Полупрозрачный с цветом */
+}
+.application__wrapper {
+    position: absolute; /* позиционируется абсолютно*/
+    top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%;/*левая граница смещена на 50% ширины родителя*/
+    transform: translate(-50%, -50%);/* смещаем элемент относительно его текущего положения*/
+    max-width: 800px;/* Максимальная ширина окна */
+    width: 100%;/* Ширина 100% от родительского элемента */
+    padding: 50px 20px; /* Внутренние отступы: 50px сверху и снизу, 20px слева и справа */
+    
+    background-color: #d52027; /*фон модального окна*/
+    color: #fff; /*цвет текста*/
+}
+.application{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    border-radius: 15px;
+
+}
+
+.application .application__logtext{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+}
+
+.application__close {
+    position: absolute; /* позиционируется абсолютно*/
+    top: 0; /* Элемент будет находиться на верхней границе родителя*/
+    right: 0; /* элемент будет прижат к правой стороне родителя */
+    padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
+    background-color: #fdec00; /*фон кнопки*/
+    cursor: pointer;
+}
+

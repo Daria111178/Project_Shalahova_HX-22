@@ -28,3 +28,33 @@ intensivelmg.forEach((item, index) => {
         intensiveText[index].setAttribute('hidden', true);
     });
 });
+
+
+//Объявляем переменную welcоmeButtonModal и сохраняем в нее кнопку c классом welcome__button
+const welcоmeButtonModal = document.querySelector(".signin");
+//объявляем переменную modalApplication и сохраняем в нее модальное окно, которое хотим увидеть
+const modalApplication = document.querySelector(".applications");
+
+//Если есть такая кнопка и модальное окно
+if (welcоmeButtonModal && modalApplication) {
+//Для кнопки «Записаться на курс» добавляем обработчик события клика по этой кнопке:
+    welcоmeButtonModal.addEventListener("click", () => {
+// удаляем атрибут hidden у модального окна modalApplication и модальное окно становится видимым
+      modalApplication.removeAttribute("hidden");
+    });
+}
+
+// добавляем обработчик события при клике вне области формы. Тогда каждый раз, когда пользователь кликает где-либо на фоне вокруг появившейся формы, будет вызываться функция,
+window.addEventListener("click", (event) => {
+// проверяем, был ли клик на фоне модального окна
+    if (event.target === modalApplication) {
+//если условие выполняется, добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+        modalApplication.setAttribute("hidden", true);
+    }
+});
+
+//Объявляем переменную closeModalButton и сохраняем в нее кнопку c классом application__button
+const closeModalButton = document.querySelector(".application__close");
+closeModalButton.addEventListener("click", () => {
+    modalApplication.setAttribute("hidden", true);
+});
